@@ -48,7 +48,7 @@ To build a robust machine learning model that accurately predicts the authentici
 
 Follow the steps below to run the project on your local machine:
 
-1. Install Required Libraries
+1.Install Required Libraries
 Ensure that the following Python libraries are installed:
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn
