@@ -64,7 +64,4 @@ Inside the notebook interface, select Cell > Run All or run each cell manually. 
    -Saving the trained model
    -Testing predictions on new data
 
-## Author
 
-S. Vyshnavi  
-Email:sukhavasivyshnavi17@gmail.com
