@@ -1,86 +1,70 @@
 # Fake News Detection using Machine Learning
 
-This project aims to identify and classify news articles as **Fake** or **Real** using Natural Language Processing (NLP) and machine learning techniques. It uses a dataset of news articles and applies text preprocessing, TF-IDF vectorization, and classification through a PassiveAggressiveClassifier model.
+This project focuses on detecting and classifying news articles as either real or fake using Natural Language Processing (NLP) and a supervised machine learning algorithm. It addresses the growing challenge of online misinformation by automating the identification of fake news.
 
 ---
 
-## Table of Contents
+## Objective
 
-- [Project Overview](#project-overview)  
-- [Tech Stack](#tech-stack)  
-- [How It Works](#how-it-works)  
-- [Model Performance](#model-performance)  
-- [How to Run](#how-to-run)  
-- [Project Structure](#project-structure)  
-- [Conclusion](#conclusion)  
-- [License](#license)
-
----
-
-## Project Overview
-
-Fake news is a serious threat to credibility in media. This project demonstrates how machine learning and NLP can be leveraged to detect fake news with high accuracy. The model is trained on a labeled dataset and can predict whether a given article is real or fake.
+To build a robust machine learning model that accurately predicts the authenticity of a news article based on its textual content.
 
 ---
 
 ## Tech Stack
 
-- **Language:** Python  
-- **Libraries:** pandas, numpy, matplotlib, seaborn, scikit-learn  
-- **Model Used:** PassiveAggressiveClassifier  
-- **Vectorizer:** TF-IDF  
-- **Platform:** Jupyter Notebook  
+- **Programming Language:** Python  
+- **Environment:** Jupyter Notebook  
+- **Libraries and Tools:**  
+  - pandas  
+  - numpy  
+  - matplotlib  
+  - seaborn  
+  - scikit-learn  
+- **NLP Technique:** CountVectorizer  
+- **ML Algorithm:** PassiveAggressiveClassifier  
 
 ---
 
-## How It Works
+## Features
 
-1. **Data Cleaning & Preprocessing:**  
-   - Removal of punctuation, stopwords, digits  
-   - Lowercasing and tokenization  
-   - Lemmatization
-
-2. **Feature Extraction:**  
-   - TF-IDF vectorizer is used to convert text into numeric vectors.
-
-3. **Model Building:**  
-   - A PassiveAggressiveClassifier is trained on the TF-IDF features.
-
-4. **Evaluation:**  
-   - Accuracy Score, Confusion Matrix, Classification Report
-
-5. **Deployment Ready:**  
-   - Model and vectorizer are saved using `pickle`.
+- Load and inspect labeled fake/real news articles  
+- Perform text cleaning and preprocessing  
+- Conduct Exploratory Data Analysis (EDA)  
+- Convert textual data into numerical form using CountVectorizer  
+- Train a machine learning classification model  
+- Evaluate model performance  
+- Save the trained model and run predictions on new data  
 
 ---
 
-## Model Performance
+## Dataset
 
-- **Accuracy:** ~93%  
-- **Classifier:** PassiveAggressiveClassifier  
-- **Evaluation Metrics Used:**  
-  - Confusion Matrix  
-  - Classification Report (Precision, Recall, F1-Score)
+- **Source:** [Fake and Real News Dataset – Kaggle](https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset)  
+- **Details:** Contains two CSV files with labeled news articles categorized as "fake" and "real".
 
 ---
 
-## How to Run
+## How to Run the Project
 
-1. **Install Required Libraries:**
+Follow the steps below to run the project on your local machine:
 
+1. Install Required Libraries
+Ensure that the following Python libraries are installed:
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn
-2. **Launch the Notebook:**
-   -jupyter notebook fake_news_detection.ipynb
-3. Run All Cells to View:
-   -Data preprocessing
-   -Exploratory Data Analysis (EDA)
-   -Model training and predictions
-   -Save model and test predictions
+2.Launch the Notebook
+jupyter notebook fake_news_detection.ipynb
+3.Run the Notebook
+Inside the notebook interface, select Cell > Run All or run each cell manually. The following steps will be executed:
 
+   -Data loading and inspection
+   -Data preprocessing and vectorization
+   -Exploratory Data Analysis (EDA)
+   -Model training and accuracy evaluation
+   -Saving the trained model
+   -Testing predictions on new data
 
 ## Author
 
 S. Vyshnavi  
 Email:sukhavasivyshnavi17@gmail.com
-
